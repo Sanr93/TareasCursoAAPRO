@@ -3,6 +3,41 @@
     <title>Pedidos</title>
 </head>
 <body>
-    <em><h1>Acá se hacen los pedidos!</h1></em>
+    <em><h1>Hace tu pedido acá!</h1></em> <br>
+    <form action="" method="">
+        Nombre:<input type="text" name="nombre">
+        <br>
+        Apellido:<input type="text" name="apellido">
+        <br>
+        Sabor:
+        <br>
+        Verdura y pollo <input type="radio" name="sabor"> <br>
+        Calabaza <input type="radio" name="sabor"> <br>
+        Berenjena <input type="radio" name="sabor"> <br>
+        Jamón y queso <input type="radio" name="sabor"><br>
+        Agregar salsa: <br>
+        <input type="checkbox" name="tomate">Tomate <br>
+        <input type="checkbox" name="bolognesa">Bolognesa <br>
+        <input type="checkbox" name="champignones">Champignones <br>
+        <input type="checkbox" name="crema">Crema <br>
+        Aclaraciones especiales: <br>
+        <textarea name="comentario" id="" cols="25" rows="5"></textarea> <br>
+        Entrega: <br>
+        <select name="envio" id="envio">
+            <option value="enviarsi">Entrega a domicilio</option>
+            <option value="enviarno">Retira en el local</option>
+         </select> <br>
+         Zona de entrega: <br>
+         <select name="zona" id="zona">
+            <option value="centro">Centro</option>
+            <option value="sur">Sur</option>
+            <option value="centro">Norte</option>
+            <option value="centro">Oeste</option>
+         </select> <br>
+         Confirmar contraseña: <br>
+         <input type="password" name="contraseña"> <br>
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Restablecer">
+    </form>
 </body>
 </html>
