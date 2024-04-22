@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Pedidos</title>
+</head>
+<body>
+    <header>
+        <h1><b><u>Pastas caseras</u></b></h1>
+        <h2>Artesanales en San Nicolás y Villa Constitución</h2>
+        <img src="../img/intro.jpeg" width="100" height="100" alt="logo de la empresa">
+            <nav>
+                <ul>
+                    <li>Quienes somos?</li>
+                    <li><a href="./horarios.html">Horarios de atención</a></li>
+                    <li><a href="./registro.html">Registro</a></li>
+                    <li><a href="../index.html">Volver al inicio</a></li>
+                </ul>
+            </nav>
+    </header>
+<main>
+    <em><h1>Hace tu pedido acá!</h1></em> <br>
+    <form action=""><!--action es para poner la direccion a donde se envian los datos-->
+        <label for="nombre">Nombre:</label><input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <br>
+        <label for="apellido">Apellido:</label><input type="text" name="apellido" id="apellido" placeholder="Apellido">
+        <br>
+        <h3>Sabor:</h3>
+        <label for="verdura">Verdura y pollo</label><input type="radio" name="sabor" id="verdura">
+        <br>
+        <label for="calabaza">Calabaza</label><input type="radio" name="sabor" id="calabaza">
+        <br>
+        <label for="berenjena">Berenjena</label><input type="radio" name="sabor" id="berenjena">
+        <br>
+        <label for="jamonyqueso">Jamón y queso</label><input type="radio" name="sabor" id="jamonyqueso">
+        <br>
+        <h3>Agregar salsa:</h3>
+        <input type="checkbox" name="salsa" id="tomate"><label for="tomate">Tomate</label>
+        <br>
+        <input type="checkbox" name="salsa" id="bolognesa"><label for="bolognesa">Bolognesa</label>
+        <br>
+        <input type="checkbox" name="salsa" id="campignones"><label for="champignones">Champignones</label>
+        <br>
+        <input type="checkbox" name="salsa" id="crema"><label for="crema">Crema</label>
+        <br>
+        <h3>Aclaraciones especiales:</h3>
+        <textarea name="comentario" id="" cols="25" rows="5" maxlength="100"></textarea>
+        <br>
+        <h3>Entrega:</h3>
+        <select name="envio" id="envio">
+            <option value="enviarsi">Entrega a domicilio</option>
+            <option value="enviarno">Retira en el local</option>
+        </select>
+        <br>
+        <h3>Zona de entrega:</h3>
+         <select name="zona" id="zona">
+            <option value="centro">Centro</option>
+            <option value="sur">Sur</option>
+            <option value="centro">Norte</option>
+            <option value="centro">Oeste</option>
+         </select> 
+        <br>
+        <h3>Dirección de entrega:</h3>
+        <input type="text" name="direccionentrega" id="direccionentrega" placeholder="Dirección de entrega">
+        <h3>Fecha de entrega:</h3>
+        <input type="date" id="fecha" name="fecha"> <br>
+        <h3>Confirmar contraseña:</h3>
+        <input type="password" name="contraseña">
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+</main>
+    <footer>
+        Todos los derechos reservados - 2024
+    </footer>
+</body>
+</html>
